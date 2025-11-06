@@ -6,18 +6,15 @@
             <div class="col-md-8">
                 <div class ="d-flex justify-content-between">
                     <div class="form-group mb-2">
-                        <a href="{{ url('master-items/form/new') }}" class="btn btn-secondary">+ Master Items Baru</a>
+                        <a href="{{ url('kategori-items/form/new') }}" class="btn btn-secondary">+ Kategori Items Baru</a>
                     </div>
-
-                    <a href="{{ url('master-items/export-excel') }}" class="btn btn-outline-success align-self-center">Export
-                        as Excel</a>
                 </div>
                 <div class="card">
-                    <div class="card-header">Daftar Master Items</div>
+                    <div class="card-header">Daftar Kategori Items</div>
 
                     <div class="card-body">
-                        @include('master_items.index.filter')
-                        @include('master_items.index.table')
+                        @include('kategori_items.index.filter')
+                        @include('kategori_items.index.table')
                     </div>
                 </div>
             </div>
@@ -25,5 +22,5 @@
     </div>
 @endsection
 @section('js')
-    @include('master_items.index.js')
+    @include('kategori_items.index.js')
 @endsection
